@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>فتح ميلس مباشرة</title>
+    <script>
+        window.onload = function() {
+            // يفتح التطبيق مباشرة
+            window.location = "milles://open";
+
+            // fallback بعد ثانيتين إذا التطبيق مو موجود
+            setTimeout(function() {
+                alert("رجاءً ثبت تطبيق ميلس أولاً!");
+                // أو رابط تحميل APK:
+                // window.location = "https://milles.app/download/mts.apk";
+            }, 2000);
+        };
+    </script>
+</head>
+<body>
+    <p>جارٍ فتح التطبيق...</p>
+</body>
+</html>
